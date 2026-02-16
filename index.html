@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>iPharmEGY Cloud</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <header class="card topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="iPharmEGY Cloud">
+      <div>
+        <div class="h1">Cloud Control Panel</div>
+        <div class="muted">Corporate SaaS interface — clean & fast</div>
+      </div>
+    </div>
+    <div class="badge" title="Environment">
+      <span class="dot"></span>
+      Production Ready
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="card sidebar">
+      <div class="badge" style="margin-bottom:10px;">
+        <span class="dot"></span>
+        Last update: <b id="lastUpdate">—</b>
+      </div>
+      <nav class="nav">
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="#" onclick="alert('Next: Clients module');return false;">Clients</a>
+        <a href="#" onclick="alert('Next: Billing module');return false;">Billing</a>
+        <a href="#" onclick="alert('Next: API module');return false;">API</a>
+        <a href="#" onclick="alert('Next: Settings module');return false;">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="card main">
+      <h2 class="h1">Welcome</h2>
+      <p class="muted">
+        This is the base Cloud portal. Next step: connect identity (Cloudflare Access) + roles + modules (ERP / POS / Inventory).
+      </p>
+
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn primary" href="dashboard.html">Open Dashboard</a>
+        <a class="btn" href="https://ipharmegy.com">Back to Portal</a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

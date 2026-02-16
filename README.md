@@ -1,2 +1,2 @@
-# ipharmegy-cloud-pages
- corporate SaaS control panel and central platform hub. Static v1 frontend deployed via GitHub Pages &amp; Cloudflare.
+iPharmEGY Cloud
+Corporate SaaS control panel (static v1).

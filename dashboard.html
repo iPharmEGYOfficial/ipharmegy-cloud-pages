@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>iPharmEGY Cloud | Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <header class="card topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="iPharmEGY Cloud">
+      <div>
+        <div class="h1">Cloud Dashboard</div>
+        <div class="muted">Overview of services</div>
+      </div>
+    </div>
+    <div class="badge">
+      <span class="dot"></span>
+      Cloud v1
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="card sidebar">
+      <div class="badge" style="margin-bottom:10px;">
+        <span class="dot"></span>
+        Last update: <b id="lastUpdate">—</b>
+      </div>
+      <nav class="nav">
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="#" onclick="alert('Next: Clients module');return false;">Clients</a>
+        <a href="#" onclick="alert('Next: Billing module');return false;">Billing</a>
+        <a href="#" onclick="alert('Next: API module');return false;">API</a>
+        <a href="#" onclick="alert('Next: Settings module');return false;">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="card main">
+      <h2 class="h1">Today</h2>
+      <p class="muted">This is a placeholder dashboard. We will connect real data later.</p>
+
+      <section class="grid">
+        <div class="card kpi">
+          <div class="num">4</div>
+          <div class="lbl">Active Modules</div>
+        </div>
+        <div class="card kpi">
+          <div class="num">12</div>
+          <div class="lbl">Users (sample)</div>
+        </div>
+        <div class="card kpi">
+          <div class="num">99.9%</div>
+          <div class="lbl">Uptime target</div>
+        </div>
+      </section>
+
+      <div class="card" style="padding:14px; margin-top:14px; border-radius:18px;">
+        <div class="h1" style="font-size:16px;">Next steps</div>
+        <ul class="muted" style="margin:8px 0 0 18px;">
+          <li>Connect Cloudflare Access identity</li>
+          <li>Add roles.json + permissions</li>
+          <li>Build modules: Clients, Billing, API, Settings</li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
